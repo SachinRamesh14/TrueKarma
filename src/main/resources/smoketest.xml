@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TrueKarma">
+	<listeners>
+		<listener class-name="com.qa.tk.screenshot.ITestListener" />
+	</listeners>	
+	<test name="TrueKarma Web Page Automation">
+		<classes>
+			<class name="com.tk.qa.Testcases.DashboardAdminTest">
+                <methods>
+                    <include name="AdminFundraiser()" />
+                </methods>
+            </class>
+           
+            <class name="com.tk.qa.Testcases.DashboradDonateTest">
+                <methods>
+                    <include name="DonationCharity()" />
+                </methods>
+            </class>            
+		</classes>
+	</test>
+</suite>
